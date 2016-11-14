@@ -1,6 +1,6 @@
 {
   "name": "mio-roles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Roles middleware",
   "homepage": "http://gromy.co",
   "main": "access.js",
