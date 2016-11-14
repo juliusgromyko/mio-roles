@@ -2,6 +2,7 @@
   "name": "mio-roles",
   "version": "1.0.0",
   "description": "Roles middleware",
+  "homepage": "http://gromy.co",
   "main": "access.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
