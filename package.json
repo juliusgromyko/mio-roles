@@ -1,8 +1,12 @@
 {
   "name": "mio-roles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Roles middleware",
   "homepage": "http://gromy.co",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Gromyco/mio-roles"
+  },
   "main": "access.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
