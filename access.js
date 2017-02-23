@@ -19,11 +19,19 @@ function access(expectedRoles){
 
     // Getting and normalizing user roles
     var userRoles = ['*'];
-    if(req.user && req.user.role){
-      userRoles = req.user.role;
+    if(req.user && (req.user.role || req.user.roles)){
+      userRoles = req.user.roles;
+
+      if(!userRoles){
+        userRoles = []
+      };
       if(!Array.isArray(userRoles)){
         userRoles = [userRoles];
-      }
+      };
+      if(req.user.role && userRoles.indexOf(req.user.role) == -1){
+        userRoles.push(req.user.role);
+      };
+
       userRoles.push('*');
     }
 
